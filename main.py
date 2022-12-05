@@ -4,12 +4,12 @@
 # Link to website I found it on is https://www.geeksforgeeks.org/turtle-programming-python/
 
 import turtle
-colors = ['red', 'blue']
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
 t = turtle.Pen()
-turtle.bgcolor('white')
+turtle.bgcolor('black')
 for x in range(360):
-	t.pencolor(colors[x%2])
-	t.width(x//100 + 1)
-	t.forward(x)
-	t.left(59)
+    t.pencolor(colors[x%6])
+    t.width(x//100 + 1)
+    t.forward(x)
+    t.left(59)
 
